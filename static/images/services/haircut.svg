@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Haircut and styling illustration</title><desc id="desc">Salon scissors and comb with a freshly styled haircut.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f5e2e5"/><stop offset="1" stop-color="#dcd9eb"/></linearGradient></defs>
+  <rect width="600" height="400" rx="28" fill="url(#bg)"/><circle cx="300" cy="195" r="145" fill="#fff" opacity=".35"/>
+  <path d="M208 304q-6-117 25-157 25-33 67-31 48 2 70 45 22 43 16 143z" fill="#50344d"/>
+  <path d="M249 176q5-45 49-47 47 3 50 51v53q0 45-50 50-48-5-49-50z" fill="#d99f83"/>
+  <path d="M249 180q12-51 54-51 30 0 46 31-32-10-54-1-22 10-46 21z" fill="#362b3a"/>
+  <path d="M264 196h13m34 0h13" stroke="#50344d" stroke-width="5" stroke-linecap="round"/><path d="M285 221q12 8 24 0" fill="none" stroke="#9d5c63" stroke-width="4" stroke-linecap="round"/>
+  <g transform="rotate(-24 155 221)"><circle cx="118" cy="279" r="22" fill="none" stroke="#b78755" stroke-width="8"/><circle cx="175" cy="279" r="22" fill="none" stroke="#b78755" stroke-width="8"/><path d="M133 262l91-137m-21 137-70-137" stroke="#50344d" stroke-width="9" stroke-linecap="round"/></g>
+  <path d="M420 150v120m13-120v120m13-120v120m13-120v120m-43-105h43m-43 23h43m-43 23h43m-43 23h43" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+</svg>

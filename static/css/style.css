@@ -1,0 +1,484 @@
+
+/* =====================================
+   MODERN SALON MANAGEMENT SYSTEM
+   ===================================== */
+
+:root {
+    --plum: #542344;
+    --plum-dark: #35152b;
+    --rose: #c77d91;
+    --rose-light: #f8e9ee;
+    --gold: #c9a56b;
+    --cream: #fffaf8;
+    --white: #ffffff;
+    --text: #302731;
+    --muted: #786e78;
+    --border: #eee3e9;
+    --radius: 16px;
+    --shadow: 0 8px 28px rgba(53, 21, 43, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--plum);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--rose);
+}
+
+h1, h2, h3, h4 {
+    color: var(--plum-dark);
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main navigation */
+
+nav, .navbar, header {
+    background: var(--white);
+}
+
+nav, .navbar {
+    padding: 14px 5%;
+    border-bottom: 1px solid var(--border);
+}
+
+nav a, .navbar a {
+    margin-right: 16px;
+    font-weight: 600;
+}
+
+.logo, .brand {
+    color: var(--plum);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+/* Main page sections */
+
+main, .container, .content {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.hero {
+    padding: 70px 5%;
+    border-radius: 0 0 28px 28px;
+    background: linear-gradient(135deg, #f8e9ee, #fffaf8);
+}
+
+.hero p {
+    color: var(--muted);
+    max-width: 650px;
+    font-size: 1.1rem;
+}
+
+/* Cards and service listings */
+
+.card, .service-card, .dashboard-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover, .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px rgba(53, 21, 43, 0.12);
+}
+
+.card h3, .service-card h3 {
+    margin-top: 0;
+}
+
+.price {
+    color: var(--plum);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+/* Buttons */
+
+button, .btn, input[type="submit"] {
+    display: inline-block;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 20px;
+    background: var(--plum);
+    color: var(--white);
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover, .btn:hover, input[type="submit"]:hover {
+    background: var(--plum-dark);
+    color: var(--white);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: var(--rose-light);
+    color: var(--plum);
+}
+
+/* Forms */
+
+form {
+    margin-top: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--plum-dark);
+    font-weight: 600;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+select, textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border: 1px solid #ded2da;
+    border-radius: 10px;
+    background: var(--white);
+    color: var(--text);
+    font: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid var(--rose);
+    outline-offset: 1px;
+}
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background: var(--plum);
+    color: var(--white);
+    text-align: left;
+}
+
+th, td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+tr:hover td {
+    background: #fff5f8;
+}
+
+/* Dashboard statistics */
+
+.stats, .dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card strong {
+    display: block;
+    color: var(--plum);
+    font-size: 2rem;
+}
+
+/* Status labels */
+
+.badge, .status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 30px;
+    background: var(--rose-light);
+    color: var(--plum);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    padding: 28px 5%;
+    background: var(--plum-dark);
+    color: var(--white);
+    text-align: center;
+}
+
+footer a {
+    color: #f6dce6;
+}
+
+/* Mobile layout */
+
+@media (max-width: 700px) {
+    main, .container, .content {
+        width: 94%;
+    }
+
+    nav, .navbar {
+        padding: 12px 3%;
+    }
+
+    nav a, .navbar a {
+        display: inline-block;
+        margin: 5px 8px 5px 0;
+    }
+
+    .hero {
+        padding: 42px 6%;
+    }
+
+    .stats, .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .card, .service-card, .dashboard-card {
+        padding: 18px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* Homepage improvements */
+.hero {
+    padding: 90px 0 65px;
+    background: linear-gradient(135deg, #fffaf8, #f8e9ee);
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.12;
+    font-weight: 750;
+    letter-spacing: -1.8px;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: var(--plum);
+}
+
+.hero-description {
+    max-width: 620px;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.section-space {
+    padding: 65px 0;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.section-heading h2,
+.booking-banner h2 {
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+    margin: 10px 0;
+}
+
+.section-heading p {
+    color: var(--muted);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(53, 21, 43, .12);
+}
+
+.service-image,
+.service-placeholder {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.service-placeholder {
+    background: linear-gradient(135deg, #f8e9ee, #ead7e0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--plum);
+}
+
+.service-placeholder span,
+.empty-services span {
+    font-size: 42px;
+}
+
+.service-content {
+    padding: 22px;
+}
+
+.service-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.service-content p {
+    color: var(--muted);
+    line-height: 1.7;
+    min-height: 50px;
+}
+
+.service-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.service-footer strong {
+    color: var(--plum);
+    font-size: 1.1rem;
+}
+
+.btn-small {
+    padding: 10px 15px;
+    background: var(--plum);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.btn-small:hover {
+    background: var(--plum-dark);
+    color: white;
+}
+
+.empty-services {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 45px 20px;
+    background: white;
+    border-radius: var(--radius);
+}
+
+.booking-banner {
+    padding: 40px;
+    border-radius: var(--radius);
+    background: linear-gradient(120deg, #f8e9ee, #f3e3eb);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.booking-banner p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.text-link {
+    color: var(--plum);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 800px) {
+    .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .section-heading,
+    .booking-banner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 520px) {
+    .hero {
+        padding: 55px 0 40px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-space {
+        padding: 40px 0;
+    }
+
+    .booking-banner {
+        padding: 25px;
+    }
+}

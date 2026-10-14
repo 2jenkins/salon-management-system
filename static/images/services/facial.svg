@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Facial treatment illustration</title><desc id="desc">A calm spa facial with a towel, fresh leaves and skincare.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f8e6e8"/><stop offset="1" stop-color="#e8d9ed"/></linearGradient><linearGradient id="skin" x2="0" y2="1"><stop stop-color="#efc4a9"/><stop offset="1" stop-color="#d9967e"/></linearGradient></defs>
+  <rect width="600" height="400" rx="28" fill="url(#bg)"/><circle cx="300" cy="195" r="142" fill="#fff" opacity=".34"/>
+  <path d="M214 159c4-75 164-101 190 6l-18 136H229z" fill="#50344d"/><path d="M243 169c0-48 25-78 58-78 42 0 66 34 66 81v79c0 51-33 88-67 88s-67-37-67-88z" fill="url(#skin)"/>
+  <path d="M228 170c8-61 41-93 89-88 32 3 58 23 69 54-29-13-49-16-73-11-24 5-48 23-85 45z" fill="#50344d"/>
+  <path d="M264 212h15m44 0h15" stroke="#50344d" stroke-width="5" stroke-linecap="round"/><path d="M290 253q13 11 26 0" fill="none" stroke="#9b5d63" stroke-width="4" stroke-linecap="round"/>
+  <path d="M200 291q100 47 200 0l-14 66H216z" fill="#fff"/><path d="M187 308q-23 17-30 44m256-44q23 17 30 44" fill="none" stroke="#d1aebf" stroke-width="9" stroke-linecap="round"/>
+  <path d="M135 247q-28-45-3-83 3 38 26 54-15-52 22-88-12 43-1 67 16-32 46-41-31 28-30 63" fill="none" stroke="#789477" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="445" cy="126" r="35" fill="#fff" opacity=".78"/><path d="M432 132q13-33 26 0m-13-31v61" fill="none" stroke="#a77d9c" stroke-width="5" stroke-linecap="round"/>
+</svg>

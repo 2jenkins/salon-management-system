@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Hair braiding illustration</title><desc id="desc">A styled silhouette with long, neat braids.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f4e3d8"/><stop offset="1" stop-color="#e8d5e7"/></linearGradient></defs>
+  <rect width="600" height="400" rx="28" fill="url(#bg)"/><circle cx="300" cy="193" r="145" fill="#fff" opacity=".35"/>
+  <path d="M217 174q0-104 83-104t83 104v103q0 69-83 69t-83-69z" fill="#50344d"/>
+  <path d="M242 154q0-59 58-59t58 59v85q0 52-58 52t-58-52z" fill="#bd8067"/>
+  <path d="M240 154q5-55 56-59 36-3 60 35-42-13-65 0-21 12-51 24z" fill="#352536"/>
+  <path d="M255 174h13m37 0h13" stroke="#50344d" stroke-width="5" stroke-linecap="round"/><path d="M278 207q10 9 20 0" fill="none" stroke="#874f59" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#bd8b48" stroke-width="9" stroke-linecap="round"><path d="M230 171q-7 42 10 63t-1 52 6 57"/><path d="M253 164q-9 44 9 66t-3 56 8 53"/><path d="M277 160q-8 48 8 69t-2 57 9 53"/><path d="M371 171q7 42-10 63t1 52-6 57"/><path d="M348 164q9 44-9 66t3 56-8 53"/><path d="M324 160q8 48-8 69t2 57-9 53"/></g>
+  <path d="M182 335q118 35 236 0" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="423" cy="111" r="22" fill="#dba675"/><circle cx="457" cy="147" r="12" fill="#fff"/><path d="M421 93l3-10m-12 17-9-4m30 10 10-3" stroke="#bd8b48" stroke-width="4" stroke-linecap="round"/>
+</svg>

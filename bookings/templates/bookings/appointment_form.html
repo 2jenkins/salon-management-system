@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block title %}Book appointment | Luxe Salon{% endblock %}
+{% block content %}
+<section class="page-heading">
+	<div class="container">
+		<div class="eyebrow">Make time for yourself</div>
+		<h1 class="section-title mb-1">Book an appointment</h1>
+		<p class="muted mb-0">Choose your service, date and an available time.</p>
+	</div>
+</section>
+<section class="auth-wrap pt-4">
+	<div class="auth-card">
+		<form method="post" id="appointment-form" data-availability-url="{% url 'available_appointment_slots' %}">
+			{% csrf_token %}
+			{% if form.non_field_errors %}<div class="alert alert-warning">{{ form.non_field_errors }}</div>{% endif %}
+			{% for field in form %}
+			<div class="mb-4">
+				<label class="form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+				{{ field }}
+				{% if field.help_text %}<div class="form-text">{{ field.help_text }}</div>{% endif %}
+				{% for error in field.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+			</div>
+			{% endfor %}
+			<p class="small muted" id="availability-message" aria-live="polite">Choose a service and date to see open appointment times.</p>
+			<div class="alert alert-light border small">Your request will be marked as pending until the salon confirms it.</div>
+			<button class="btn btn-salon btn-lg rounded-pill w-100" type="submit">Request appointment</button>
+			<p class="text-center small muted mt-3 mb-0">You can cancel a pending appointment from your dashboard.</p>
+		</form>
+	</div>
+</section>
+<script>
+	(() => {
+		const form = document.getElementById('appointment-form');
+		const service = document.getElementById('id_service');
+		const date = document.getElementById('id_appointment_date');
+		const time = document.getElementById('id_appointment_time');
+		const message = document.getElementById('availability-message');
+		const updateTimes = async () => {
+			const previous = time.value;
+			time.replaceChildren(new Option('Loading available times…', ''));
+			time.disabled = true;
+			if (!service.value || !date.value) {
+				time.replaceChildren(new Option('Choose a service and date first', ''));
+				message.textContent = 'Choose a service and date to see open appointment times.';
+				return;
+			}
+			const url = new URL(form.dataset.availabilityUrl, window.location.origin);
+			url.searchParams.set('service', service.value);
+			url.searchParams.set('date', date.value);
+			try {
+				const response = await fetch(url);
+				const data = await response.json();
+				time.replaceChildren(new Option(data.slots.length ? 'Select an available time' : 'No times available', ''));
+				for (const slot of data.slots) {
+					time.add(new Option(slot.label, slot.value, false, slot.value === previous));
+				}
+				time.disabled = data.slots.length === 0;
+				message.textContent = data.slots.length
+					? `${data.slots.length} available start times.`
+					: data.notice || 'No appointment times are available for that service and date. Try another date.';
+			} catch {
+				time.replaceChildren(new Option('Could not load times', ''));
+				message.textContent = 'Could not load availability. Please retry.';
+			}
+		};
+		service.addEventListener('change', updateTimes);
+		date.addEventListener('change', updateTimes);
+		if (service.value && date.value) updateTimes();
+	})();
+</script>
+{% endblock %}

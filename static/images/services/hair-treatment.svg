@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Hair treatment illustration</title><desc id="desc">Flowing healthy hair beside a nourishing treatment bottle.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e8e5d6"/><stop offset="1" stop-color="#d9e8df"/></linearGradient><linearGradient id="hair" x2="1" y2="1"><stop stop-color="#79533f"/><stop offset="1" stop-color="#392936"/></linearGradient></defs>
+  <rect width="600" height="400" rx="28" fill="url(#bg)"/><circle cx="300" cy="195" r="145" fill="#fff" opacity=".35"/>
+  <path d="M190 338q-27-176 49-234 53-40 110 0 78 56 57 234-34-50-51-100-30 52-68 100-8-61-14-91-32 54-83 91z" fill="url(#hair)"/>
+  <path d="M252 135q-29 92 3 161m64-190q-9 81 15 144m41-103q-10 70 22 126" fill="none" stroke="#c28c62" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+  <rect x="91" y="194" width="86" height="145" rx="18" fill="#fff"/><rect x="108" y="165" width="52" height="36" rx="8" fill="#8b6685"/><path d="M119 165v-17h30v17" fill="#50344d"/>
+  <rect x="105" y="231" width="58" height="55" rx="8" fill="#cde1d1"/><path d="M119 254q15-25 30 0m-15-14v30" fill="none" stroke="#64876f" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="445" cy="115" r="23" fill="#fff" opacity=".8"/><path d="M445 96c-13 15-15 22-15 29a15 15 0 0030 0c0-7-2-14-15-29z" fill="#8cb7a1"/>
+</svg>

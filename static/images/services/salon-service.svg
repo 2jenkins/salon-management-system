@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Salon service illustration</title><desc id="desc">A collection of beauty tools arranged for a salon visit.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f7e6e9"/><stop offset="1" stop-color="#e4d9ed"/></linearGradient></defs>
+  <rect width="600" height="400" rx="28" fill="url(#bg)"/><circle cx="300" cy="194" r="145" fill="#fff" opacity=".38"/>
+  <rect x="223" y="123" width="79" height="188" rx="22" fill="#fff"/><rect x="241" y="96" width="43" height="37" rx="8" fill="#8c6685"/><path d="M242 207h41v67h-41z" fill="#c7dfcf"/><path d="M252 240q10-21 21 0m-11-11v23" fill="none" stroke="#6f9277" stroke-width="5" stroke-linecap="round"/>
+  <path d="M355 124l56 190m-72-185l-35 195" stroke="#bd8b48" stroke-width="10" stroke-linecap="round"/><circle cx="343" cy="113" r="21" fill="none" stroke="#50344d" stroke-width="8"/><circle cx="405" cy="108" r="21" fill="none" stroke="#50344d" stroke-width="8"/>
+  <path d="M165 310q20-41 41-82m-15 88q16-34 32-67m-44 18h45m-55 18h54m-62 18h60" fill="none" stroke="#50344d" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="163" cy="107" r="28" fill="#fff" opacity=".85"/><path d="M163 88c-12 14-14 21-14 27a14 14 0 0028 0c0-6-2-13-14-27z" fill="#9c718f"/>
+</svg>

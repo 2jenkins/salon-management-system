@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Luxe Salon | Beauty & Care{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow mb-3">YOUR TIME TO SHINE</div>
+
+    <h1>
+      Beauty is personal.<br />
+      <span>So is your care.</span>
+    </h1>
+
+    <p class="hero-description">
+      Discover thoughtful beauty services, skilled hands and a calmer way to
+      book your next salon visit.
+    </p>
+
+    <div class="hero-actions">
+      <a href="{% url 'book_appointment' %}" class="btn btn-primary">
+        Book an appointment
+      </a>
+
+      <a href="#services" class="btn btn-outline">Explore services</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-space" id="services">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <div class="eyebrow">MADE FOR YOU</div>
+        <h2>Popular salon services</h2>
+        <p>Find your next favourite treatment.</p>
+      </div>
+
+      <a href="{% url 'service_list' %}" class="text-link">
+        View all services →
+      </a>
+    </div>
+
+    <div class="service-grid">
+      {% for service in services %}
+      <article class="service-card">
+        {% if service.image %}
+        <img
+          src="{{ service.image.url }}"
+          alt="{{ service.name }}"
+          class="service-image"
+        />
+        {% else %}
+        <img
+          src="{% static service.default_image %}"
+          alt="{{ service.name }}"
+          class="service-image"
+        />
+        {% endif %}
+
+        <div class="service-content">
+          <h3>{{ service.name }}</h3>
+          <p>{{ service.description }}</p>
+
+          <div class="service-footer">
+            <strong>KSh {{ service.price|floatformat:0 }} · {{ service.duration_minutes }} min</strong>
+            <a href="{% url 'book_appointment' %}?service={{ service.pk }}" class="btn btn-small"
+              >Book now</a
+            >
+          </div>
+        </div>
+      </article>
+      {% empty %}
+      <div class="empty-services">
+        <span>✦</span>
+        <h3>Your beauty journey starts here</h3>
+        <p>Our salon services are being prepared. Please check back soon.</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section-space">
+  <div class="container">
+    <div class="booking-banner">
+      <div>
+        <div class="eyebrow">A LITTLE TIME FOR YOURSELF</div>
+        <h2>Your next refresh starts here.</h2>
+        <p>Book online and keep track of your appointment in one place.</p>
+      </div>
+
+      <a href="{% url 'book_appointment' %}" class="btn btn-light">
+        Schedule a visit →
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Pedicure illustration</title><desc id="desc">A relaxed foot with polished toenails and a spa polish bottle.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#e7e9d9"/><stop offset="1" stop-color="#e5d9eb"/></linearGradient></defs>
+  <rect width="600" height="400" rx="28" fill="url(#bg)"/><circle cx="300" cy="195" r="145" fill="#fff" opacity=".36"/>
+  <path d="M283 93q-23 4-21 31l21 117q6 31 32 38l95 26q29 8 38-14 9-22-18-35l-73-37-36-109q-9-27-38-17z" fill="#e8b79f" stroke="#c98f7c" stroke-width="6" stroke-linejoin="round"/>
+  <g fill="#a85375"><ellipse cx="272" cy="105" rx="13" ry="19" transform="rotate(-9 272 105)"/><ellipse cx="302" cy="103" rx="12" ry="17"/><ellipse cx="329" cy="112" rx="11" ry="15"/><ellipse cx="351" cy="128" rx="10" ry="14"/><ellipse cx="369" cy="149" rx="9" ry="13"/></g>
+  <path d="M199 291q54 36 107 0m-125 27q74 43 147 0" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".85"/>
+  <rect x="104" y="191" width="72" height="121" rx="17" fill="#fff"/><rect x="119" y="161" width="42" height="38" rx="8" fill="#a85375"/><rect x="117" y="231" width="46" height="48" rx="9" fill="#d98ca4"/><path d="M129 248h22m-11-11v24" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M442 110q12-13 24 0m-12-15v30" stroke="#bd8b48" stroke-width="5" stroke-linecap="round"/><circle cx="454" cy="111" r="31" fill="none" stroke="#fff" stroke-width="5" opacity=".8"/>
+</svg>
